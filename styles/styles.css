@@ -24,10 +24,9 @@
 }
 
 .body {
-  margin: 0;
   display: flex;
   flex-direction: column;
-  width: 1280px;
+  min-width: 1200px;
   font-family: "PT Sans";
   font-size: 14px;
   line-height: 26px;
@@ -213,7 +212,7 @@
 
   background-color: #7DB54F;
   box-sizing: border-box;
-
+  font-family: "PT Sans";
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
@@ -272,6 +271,7 @@
   margin-top: -5px;
   min-width: 1200px;
   z-index: 1;
+  background-color: #FFFFFF;
 }
 
 
@@ -306,6 +306,7 @@
 }
 
 /*Настоящий городок*/
+
 .advantages-main {
   display: flex;
   margin: 0;
@@ -319,6 +320,7 @@
   background-color: #82b3d3;
 }
 /*Мост дьявола*/
+
 .advantages-main_2 {
   display: flex;
   flex-direction: row-reverse;
@@ -528,6 +530,7 @@
 }
 
 /*кнопка Поиск гостиниц в Седоне*/
+
 .search-button.button {
   display: flex;
   flex-wrap: wrap;
@@ -552,7 +555,9 @@
 .subscribe-primary {
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../img/background/blur-background.jpg);
+  background-image: url("../img/background/blur-background.jpg");
+  background-size: cover;
+  background-color: #68A2CA;
   width: 1200px;
   min-height: 415px;
   margin: 0;
@@ -615,6 +620,9 @@
   font-size: 18px;
   background-color: #F2F2F2;
   border: 2px solid transparent;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .field-input-form:hover {
@@ -683,6 +691,10 @@
   align-items: center;
 }
 
+.foter-contacts {
+  list-style-type: none; /*отключение булетов*/
+}
+
 .footer-social-item-vk {
   margin-left: 81px;
   list-style-type: none; /*отключение булетов*/
@@ -716,6 +728,7 @@
   border-radius: 10px;
   gap: 10px;
 }
+
 .footer-social-item-tw:active,
 .footer-social-item-fb:active,
 .footer-social-item-yt:active  {
@@ -723,7 +736,7 @@
 }
 
 .footer-contacts-phone {
-  margin-left: 247px;
+  margin-left: 249px;
   margin-top: 35px;
   font-weight: 400;
   font-size: 40px;
@@ -1178,6 +1191,7 @@
   color: #ffffff;
   background-image: url("../img/background/main-header.jpg");
   background-size: cover;
+  background-color: #68A2CA;
 }
 
 /*Гостиницы Седоны*/
@@ -1317,6 +1331,7 @@
 }
 
 /*кнопка Применить*/
+
 .filter-button-submit {
   display: inline-block;
   margin: 0;
@@ -1354,6 +1369,7 @@
 }
 
 /*кнопка Сбросить*/
+
 .filter-reset {
   align-self: center;
   margin: 0;
@@ -1392,7 +1408,7 @@
 /* Control */
 
 .control {
-  margin: -1px;
+  margin: -3px;
   position: relative;
   display: block;
 }
@@ -1411,6 +1427,7 @@
   grid-template-columns: 20px 1fr;
   gap: 20px;
   line-height: 20px;
+  margin-left: 2.5px;
 }
 
 .control-lead::before,
@@ -1419,7 +1436,6 @@
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   height: 20px;
-  margin-left: 1.5px;
   margin-top: 2px;
   margin-bottom: -10px;
 
@@ -1472,8 +1488,8 @@
   background-image: none;
   width: 10px;
   height: 10px;
-  top: 4px;
-  left: 4px;
+  top: 5px;
+  left: 5px;
   border-radius: 50%;
 }
 
@@ -1532,7 +1548,8 @@
   color: #000000;
   border: 2px solid #ffffff;
   border-radius: 4px;
-  font-family: inherit;
+  font-family: "PT Sans";
+  font-weight: 700;
   font-size: 18px;
   appearance: textfield;
 }
@@ -1772,6 +1789,7 @@
   padding: 0;
   margin-left: 5px;
   display: flex;
+  flex-wrap: wrap;
   width: 156px;
 }
 
@@ -1956,8 +1974,6 @@
 }
 
 .button-card-more-info:focus:not(:active) {
-  background-color: #68a2ca;
-  outline: 3px solid #615048;
   outline-offset: 0;
 }
 
@@ -1973,18 +1989,13 @@
   border-radius: 4px;
   border: none;
   margin-top: 21px;
+  padding: 7px 15px 6px;
   font-weight: 700;
   font-size: 14px;
 }
 
 .button-card-favorites:hover {
   background-color: #68a2ca;
-}
-
-.button-card-favorites:focus {
-  background-color: #615048;
-  outline: 3px solid #83B3D3;
-  outline-offset: -3px;
 }
 
 .button-card-favorites:active {
@@ -1994,11 +2005,11 @@
 
 .button-card-favorites:focus:not(:active) {
   background-color: #68a2ca;
-  outline: 3px solid #615048;
   outline-offset: 0;
 }
 
 /*кнопка третьей карточки*/
+
 .button-card-favorites-sent {
   grid-column: 3/4;
   grid-row: 4/5;
@@ -2022,11 +2033,6 @@
   background-color: #6c9e42;
 }
 
-.button-card-favorites-sent:focus:not(:active) {
-  background-color: #6c9e42;
-  outline: 3px solid #615048;
-  outline-offset: 0;
-}
 
 .card-star {
   grid-column: 1/2;

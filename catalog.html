@@ -55,7 +55,8 @@
           </div>
 
         </nav>
-    </header>
+      </header>
+    </div>
 
     <!--Фильтр-->
 
@@ -185,7 +186,7 @@
 
 
           <label class="visually-hidden" for="sorting">Сортировка.</label>
-          <select class="select-control" name="sorting" id="sorting">
+          <select class="select-control" name="sorting" id="sorting" aria-label="Сортировка гостиниц.">
             <option value="cheap" selected>Сначала дешёвые</option>
             <option value="popular">Сначала дорогие</option>
             <option value="expensive">Сначала популярные</option>
@@ -279,8 +280,8 @@
               <span class="product-card-price-price">От 4000 ₽</span>
             </div>
 
-            <button class="button-card-more-info" href="#">ПОДРОБНЕЕ</button>
-            <button class="button-card-favorites" href="#">В ИЗБРАННОЕ</button>
+            <button class="button-card-more-info">ПОДРОБНЕЕ</button>
+            <button class="button-card-favorites">В ИЗБРАННОЕ</button>
 
             <p class="card-star star star-four">
               <span class="visually-hidden">4 звезды.</span>
@@ -306,8 +307,8 @@
               <span class="product-card-price-price">От 5000 ₽</span>
             </div>
 
-            <button class="button-card-more-info" href="#">ПОДРОБНЕЕ</button>
-            <button class="button-card-favorites-sent" href="#">В ИЗБРАННОМ</button>
+            <button class="button-card-more-info">ПОДРОБНЕЕ</button>
+            <button class="button-card-favorites-sent">В ИЗБРАННОМ</button>
 
             <p class="card-star star star-four">
               <span class="visually-hidden">4 звезды.</span>
@@ -333,8 +334,8 @@
               <span class="product-card-price-price">От 2500 ₽</span>
             </div>
 
-            <button class="button-card-more-info" href="#">ПОДРОБНЕЕ</button>
-            <button class="button-card-favorites" href="#">В ИЗБРАННОЕ</button>
+            <button class="button-card-more-info">ПОДРОБНЕЕ</button>
+            <button class="button-card-favorites">В ИЗБРАННОЕ</button>
 
             <p class="card-star star star-three">
               <span class="visually-hidden">3 звезды.</span>
@@ -361,16 +362,16 @@
               <span class="product-card-price-price">От 1500 ₽</span>
             </div>
 
-            <button class="button-card-more-info" href="#">ПОДРОБНЕЕ</button>
-            <button class="button-card-favorites" href="#">В ИЗБРАННОЕ</button>
+            <button class="button-card-more-info">ПОДРОБНЕЕ</button>
+            <button class="button-card-favorites">В ИЗБРАННОЕ</button>
 
             <p class="card-star star star-two">
               <span class="visually-hidden">2 звезды.</span>
             </p>
 
             <p class="rating-area">РЕЙТИНГ: 5,0</p>
-
           </div>
+        </div>
       </section>
 
 
@@ -416,9 +417,9 @@
           <p class="subscribe-section-description-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
 
           <form class="subscribe-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="subscribe-field-catalog">
+            <label class="subscribe-field-catalog">
               <span class="visually-hidden">Ваш e-mail</span>
-             <input class="field-input-form-catalog" type="email" name="email" placeholder="Ваш e-mail">
+             <input class="field-input-form-catalog" type="email" name="email" required placeholder="Ваш e-mail">
             </label>
             <button class="subscribe-form-button-catalog" type="submit">ПОДПИСАТЬСЯ</button>
           </form>
@@ -456,14 +457,14 @@
               <span class="visually-hidden">Ютуб.</span>
             </a>
           </li>
-          <div class="foter-contacts">
+          <li class="foter-contacts">
             <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <a class="footer-developer" href="https://htmlacademy.ru/">
-              <img src="img/logo/logo_htmlacademy .svg" alt="Разработано HTML Academy.">
+              <img src="img/logo/logo_htmlacademy.svg" alt="Разработано HTML Academy.">
             </a>
-          </div>
+          </li>
         </ul>
       </footer>
-    </div>
+    </section>
   </body>
 </html>

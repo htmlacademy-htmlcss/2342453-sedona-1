@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Седона - небольшой городок в Аризоне</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   </head>
 
   <body class="page">
@@ -63,7 +63,7 @@
         <section class="page-container">
           <div class="main-promo">
             <h1 class="visually-hidden">Туристический город Седона.</h1>
-            <img class="promo-img" src="img/background/background-promo.jpg">
+            <img class="promo-img" src="img/background/background-promo.jpg" alt="Промо Седоны.">
           </div>
           <h2 class="visually-hidden">Преимущества Седоны.</h2>
 
@@ -130,19 +130,19 @@
 
             <div class="advices">
               <div class="advices-item-housing">
-                <img class="advices-item-house" src="img/icons/house.svg">
+                <img class="advices-item-house" src="img/icons/house.svg" alt="Иконка жилья.">
                 <h4 class="advices-title">ЖИЛЬЁ</h4>
                 <p class="advices-text">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
               </div>
 
               <div class="advices-item-food">
-                <img class="advices-item-burger" src="img/icons/food.svg">
+                <img class="advices-item-burger" src="img/icons/food.svg" alt="Иконка бургера.">
                 <h4 class="advices-title">ЕДА</h4>
                 <p class="advices-text">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь</p>
               </div>
 
               <div class="advices-item-gifts">
-                <img class="advices-item-present" src="img/icons/present.svg">
+                <img class="advices-item-present" src="img/icons/present.svg" alt="Иконка сувенира.">
                 <h4 class="advices-title">СУВЕНИРЫ</h4>
                 <p class="advices-text">Не только китайского,<br> но и настоящего местного<br> производства!</p>
               </div>
@@ -166,9 +166,9 @@
               <p class="subscribe-section-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
 
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="subscribe-field">
+                <label class="subscribe-field">
                   <span class="visually-hidden">Ваш e-mail</span>
-                 <input class="field-input-form" type="email" name="email" placeholder="Ваш e-mail">
+                 <input class="field-input-form" type="email" name="email" required placeholder="Ваш e-mail">
                 </label>
                 <button class="subscribe-form-button" type="submit">ПОДПИСАТЬСЯ</button>
               </form>
@@ -207,12 +207,13 @@
               <span class="visually-hidden">Ютуб.</span>
             </a>
           </li>
-          <div class="foter-contacts">
+
+          <li class="foter-contacts">
             <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <a class="footer-developer" href="https://htmlacademy.ru/">
-              <img src="img/logo/logo_htmlacademy .svg" alt="Разработано HTML Academy">
+              <img src="img/logo/logo_htmlacademy.svg" alt="Разработано HTML Academy">
             </a>
-          </div>
+          </li>
         </ul>
       </footer>
     </div>
@@ -229,7 +230,7 @@
         <form class="modal-content search-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="search-form-date field field-search">
             <label class="field-title" for="date-in">Дата Заезда:</label>
-            <input class="field-input" type="text" name="date-in" id="date-in" placeholder="Укажите дату" value="27 апреля 2020">
+            <input class="field-input" type="text" name="date-in" id="date-in" required placeholder="Укажите дату" value="27 апреля 2020">
           </div>
           <div class="field-message">
           <span class="field-message field-message-error">Мы не можем отправить вас в прошлое.</span>
@@ -237,7 +238,7 @@
 
           <div class="search-form-date field field-search">
             <label class="field-title" for="date-out">Дата Выезда:</label>
-            <input class="field-input" type="text" name="date-out" id="date-out" placeholder="Укажите дату" value="1 сентября 2023">
+            <input class="field-input" type="text" name="date-out" id="date-out" required placeholder="Укажите дату" value="1 сентября 2023">
           </div>
           <div class="field-message">
           <span class="field-message">На эти даты есть свободные номера. Пока есть.</span>
@@ -252,7 +253,7 @@
                   <span class="visually-hidden">Уменьшить количество.</span>
                 </button>
 
-                <input class="number-input field-input" type="number" name="adults-amount" id="adults" placeholder="0" value="2" min="1" step="1">
+                <input class="number-input field-input" type="number" name="adults-amount" id="adults" required placeholder="0" value="2" min="1" step="1">
 
                 <button class="number-button number-button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
@@ -276,7 +277,7 @@
                   <span class="visually-hidden">Уменьшить количество.</span>
                 </button>
 
-                <input class="number-input field-input" type="number" name="children-amount" id="children" aria-describedby="children-info" placeholder="0" value="2" min="0" step="1">
+                <input class="number-input field-input" type="number" name="children-amount" id="children" aria-describedby="children-info" required placeholder="0" value="2" min="0" step="1">
 
                 <button class="number-button number-button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
