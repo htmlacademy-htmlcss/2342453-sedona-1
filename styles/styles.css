@@ -23,7 +23,8 @@
   height: auto;
 }
 
-.body {
+.page {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-width: 1200px;
@@ -1980,6 +1981,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 156px;
+  gap: 6px;
 }
 
 .select-item {
@@ -1999,11 +2001,6 @@
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-}
-
-.card-grid-toggle:not(:last-child) {
-  margin-right: 6px;
-
 }
 
 .card-grid-toggle:hover {
