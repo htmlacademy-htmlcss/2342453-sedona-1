@@ -61,7 +61,7 @@
 
 .main-container {
   flex-grow: 1;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -74,7 +74,7 @@
   text-decoration: none;
   text-transform: uppercase;
   border: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   background-color: #756257;
   cursor: pointer;
 }
@@ -120,7 +120,7 @@
   margin-left: -2px;
   margin-bottom: 5px;
   gap: 2px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -143,6 +143,14 @@
   display: block;
   padding: 17.5px;
   padding-left: 13px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-link-hotel {
+  display: block;
+  padding: 17.5px;
+  padding-left: 6px;
   color: #000000;
   text-decoration: none;
 }
@@ -231,7 +239,7 @@
 
   background-color: #7db54f;
   box-sizing: border-box;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
@@ -252,7 +260,7 @@
   margin-bottom: 5px;
   align-items: center;
   justify-content: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   background-color: #756257;
@@ -372,7 +380,7 @@
   margin: 0 auto;
   min-width: 400px;
   margin-top: 102px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   text-align: center;
 }
@@ -382,7 +390,7 @@
   min-width: 400px;
   margin-top: 115px;
   margin-bottom: -10px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
 
 }
@@ -703,7 +711,7 @@
   font-size: 18px;
   background-color: #f2f2f2;
   border: 2px solid transparent;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -731,7 +739,7 @@
   margin-bottom: 13px;
   padding-left: 10px;
   padding-right: 10px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -821,7 +829,7 @@
   margin-top: 3px;
   margin-bottom: 3px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
@@ -893,7 +901,7 @@
   height: 448px;
   margin: auto;
   padding: 64px 70px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
@@ -1108,7 +1116,7 @@
   width: 577px;
   height: 48px;
   margin-top: -2px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1240,7 +1248,7 @@
   margin: 0;
   margin-top: 54px;
   margin-bottom: 42px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 36px;
@@ -1271,6 +1279,70 @@
 
 
 /*КАТАЛОГ*/
+
+/*Шапка каталога*/
+
+.navigation-list {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 100px 117px 125px;
+  min-width: 593px;
+  margin: 0;
+  padding: 0;
+  margin-left: -2px;
+  margin-bottom: 5px;
+  gap: 2px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  list-style-type: none; /*отключение булетов*/
+}
+
+/*Главная, о Седоне, гостиницы*/
+
+.navigation-link-main-catalog {
+  display: block;
+  padding: 17.5px;
+  padding-left: 17px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-link-hotel-catalog {
+  display: block;
+  padding: 17.5px;
+  padding-left: 6px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-link-main-catalog:hover {
+  color: #756257;
+}
+
+.navigation-link-main-catalog:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.navigation-link-active-catalog {
+  position: relative;
+  padding-left: 6px;
+  margin-top: -1px;
+}
+
+.navigation-link-active-catalog::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  right: 16px;
+  height: 3px;
+  bottom: -4px;
+  background-color: #756257;
+}
+
+
 
 /*Страница*/
 
@@ -1433,7 +1505,7 @@
   padding: 8px 40px 6px 40px;
   min-width: 191px;
   min-height: 36px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   margin-left: -18px;
   margin-bottom: 21px;
@@ -1471,7 +1543,7 @@
   margin: 0;
   margin-left: -18px;
   padding: 8px 50px 8px 50px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1651,7 +1723,7 @@
   color: #000000;
   border: 2px solid #ffffff;
   border-radius: 4px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   appearance: textfield;
@@ -1795,7 +1867,7 @@
   margin-left: -4px;
   padding-right: 101px;
   padding-left: 19px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -2032,7 +2104,7 @@
 
   margin: 0;
   margin-left: -3px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   column-gap: 128px;
   margin-top: 23px;
 }
@@ -2049,7 +2121,7 @@
   border-radius: 4px;
   border: none;
   margin-top: 21px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
 }
@@ -2085,7 +2157,7 @@
   border: none;
   margin-top: 21px;
   padding: 7px 15px 6px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
 }
@@ -2321,7 +2393,7 @@
   font-size: 18px;
   background-color: #f2f2f2;
   border: 2px solid transparent;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -2339,4 +2411,110 @@
 .field-input-form-catalog:disabled {
   outline: 3px solid #ff5757;
   outline-offset: -3px;
+}
+
+/*Футер каталога*/
+
+.page-footer-catalog {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  gap: 80px;
+  padding: 27px 62px 25px;
+  margin-top: 93px;
+}
+
+.footer-social {
+  align-self: start;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 50px;
+  margin-left: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.social-item {
+  margin: 4px;
+}
+
+.social-link {
+  display: grid;
+  place-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  color: #83b3d3;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color:  #68a2ca;
+}
+
+.social-link:active {
+  color:  #68a2ca;
+  opacity: 0.3;
+}
+
+
+
+.footer-contacts-phone {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  padding-left: 50px;
+  margin: 0 auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+}
+
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-phone:focus {
+  color: #756157;
+
+}
+
+.footer-contacts-phone:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.footer-developer {
+  margin: 0 auto;
+  margin-left: 141px;
+  margin-bottom: 3px;
+
+}
+
+.footer-developer:hover {
+  color: #756157;
+  ;
+}
+
+.footer-developer:focus {
+  color: #756157;
+}
+
+.footer-developer:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
+.footer-developer-img {
+  display: block;
 }
