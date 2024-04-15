@@ -632,7 +632,7 @@
   background-color: #756257;
   border-radius: 4px;
   min-width: 376px;
-  height: 52px;
+  min-height: 52px;
   box-sizing: border-box;
 }
 
