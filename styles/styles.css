@@ -2042,10 +2042,9 @@
 
 
 .product-card {
-  display: grid;
-  grid-template-columns: 134px 26px 140px;
-  grid-template-rows: initial;
-  gap: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   position: relative;
   z-index: 0;
   justify-items: start;
@@ -2084,6 +2083,7 @@
   font-size: 24px;
   line-height: 31px;
   margin-top: 0;
+  text-align: left;
 }
 
 .product-card-image {
@@ -2125,13 +2125,21 @@
   margin-top: 13px;
 }
 
+.button-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 /*кнопка Подробнее*/
 
 .button-card-more-info {
   grid-column: 1/2;
   grid-row: 4/5;
   min-width: 140px;
-  height: 36px;
+  min-height: 36px;
   background-color: #756257;
   color: #ffffff;
   border-radius: 4px;
@@ -2166,7 +2174,7 @@
   grid-column: 3/4;
   grid-row: 4/5;
   min-width: 140px;
-  height: 36px;
+  min-height: 36px;
   background-color: #83b3d3;
   color: #ffffff;
   border-radius: 4px;
@@ -2224,6 +2232,14 @@
   align-self: start;
 }
 
+.rating-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 /* Звёздочки */
 
 .star {
@@ -2254,9 +2270,7 @@
 }
 
 .rating-area {
-  grid-column: 3/4;
-  grid-row: 5/6;
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
@@ -2264,9 +2278,9 @@
   text-align: center;
   margin: 0;
   font-size: 16px;
-  margin-left: -9px;
-  margin-top: 20px;
-  min-width: 160px;
+  margin-top: 17px;
+  min-width: 140px;
+  min-height: 37px;
   border-radius: 4px;
   background-color: #f2f2f2;
 }
@@ -2278,8 +2292,8 @@
   display: flex;
   flex-wrap: wrap;
   min-width: 1060px;
-  margin-top: 40px;
-  margin-left: 70px;
+  margin-top: 37px;
+  margin-left: 71px;
   margin-bottom: 155px;
   list-style-type: none; /*отключение булетов*/
   border-top: 1px solid #e6e6e6;
