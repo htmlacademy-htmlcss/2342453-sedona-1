@@ -623,7 +623,6 @@
   align-content: center;
   justify-content: center;
   padding: 5px;
-
   margin: 0 auto;
   margin-bottom: 42px;
   font-weight: 700;
@@ -685,6 +684,7 @@
 .subscribe-form {
   display: grid;
   grid-template-columns: 1fr 285px;
+  max-width: 800px;
   margin: 0 auto;
   margin-top: 53px;
 }
@@ -1278,6 +1278,10 @@
   opacity: 30%;
 }
 
+.search-form-button:disabled {
+  background-color: #e5e5e5;
+}
+
 
 /*КАТАЛОГ*/
 
@@ -1537,6 +1541,10 @@
 
 .filter-button-submit:not(:active):focus {
   outline-color: #ffffff;
+}
+
+.filter-button-submit:disabled {
+  background-color: #e5e5e5;
 }
 
 /*кнопка Сбросить*/
@@ -2375,6 +2383,7 @@
 .subscribe-form-catalog {
   display: grid;
   grid-template-columns: 1fr 285px;
+  max-width: 800px;
   margin: 0 auto;
   margin-top: 55px;
 }
